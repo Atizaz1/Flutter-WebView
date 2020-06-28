@@ -15,12 +15,12 @@ class MyApp extends StatelessWidget
   Widget build(BuildContext context) 
   {
     return MaterialApp(
-      title: 'Yola Movies',
+      title: 'Title of the App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Yola Movies'),
+      home: MyHomePage(title: 'Title of the App'),
     );
   }
 }
@@ -105,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage>
             children: <Widget>
             [
               WebView(
-                initialUrl: 'https://yolamovies.com',
+                initialUrl: 'url goes here.',
                 javascriptMode: JavascriptMode.unrestricted,
                 onPageFinished: doneLoading,
                 onPageStarted: startLoading,
